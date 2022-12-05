@@ -10,9 +10,9 @@ const contains = (r1, r2) => {
     )
 }
 
-const findOverlap = async (filter) => {
-    const contents = await readFile('input.txt', 'utf8')
+const contents = await readFile('input.txt', 'utf8')
 
+const findOverlap = async (contents, filter) => {
     return contents.split('\n')
         .filter(pair => {
             const [range1, range2] = pair.split(',').map(r => r.split('-'))
@@ -21,8 +21,8 @@ const findOverlap = async (filter) => {
         .length
 }
 
-const part1 = await findOverlap(fullyContains)
-const part2 = await findOverlap(contains)
+const part1 = await findOverlap(contents, fullyContains)
+const part2 = await findOverlap(contents, contains)
 
 console.log(part1)
 console.log(part2)
