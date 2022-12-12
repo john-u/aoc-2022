@@ -25,3 +25,7 @@
 ## Day 6
 
 [Tuning Trouble](https://adventofcode.com/2022/day/6)
+
+## Day 8
+
+[Treetop Tree House](https://adventofcode.com/2022/day/8)
